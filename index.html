@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101014">
+  <title>SPINE / Animation Portfolio</title>
+  <meta name="description" content="2D character animation and Spine rigging portfolio.">
+  <link rel="stylesheet" href="https://unpkg.com/@esotericsoftware/spine-player@4.2.*/dist/spine-player.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Back to top"><span class="brand-mark">S</span><span>SPINE<span class="brand-muted"> / PORTFOLIO</span></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#work">WORK</a>
+      <a href="#about">ABOUT</a>
+      <a class="contact-link" href="mailto:hello@example.com">CONTACT ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> 2D ANIMATION · RIGGING · SPINE</p>
+        <h1>Characters<br>in <span>motion.</span></h1>
+        <p class="hero-description">캐릭터에 생명을 불어넣는 2D 애니메이션과 리깅 작업을 소개합니다.</p>
+        <a class="text-link" href="#work">EXPLORE THE WORK <span>↓</span></a>
+      </div>
+      <div class="hero-note">
+        <span class="note-index">PORTFOLIO / 001</span>
+        <p>Animation is not just movement.<br>It's personality in every frame.</p>
+      </div>
+    </section>
+
+    <section class="showcase section-wrap" id="work">
+      <div class="section-heading">
+        <div><p class="eyebrow">FEATURED CHARACTER</p><h2>Character Lab<span class="accent">.</span></h2></div>
+        <span class="project-number">01 — 01</span>
+      </div>
+
+      <div class="player-layout">
+        <div class="player-shell">
+          <div class="player-topline"><span><i class="status-dot"></i> LIVE PREVIEW</span><span id="player-status">WAITING FOR ASSETS</span></div>
+          <div class="player-stage">
+            <div class="stage-grid" aria-hidden="true"></div>
+            <div id="spine-player" aria-label="Spine animation player"></div>
+            <div id="player-placeholder" class="player-placeholder">
+              <div class="placeholder-symbol">✳</div>
+              <p class="placeholder-title">Your character goes here.</p>
+              <p class="placeholder-copy">Spine에서 내보낸 파일을<br><code>assets/character/</code> 폴더에 넣어주세요.</p>
+              <span class="placeholder-tag">JSON · ATLAS · PNG</span>
+            </div>
+            <div id="player-error" class="player-error" hidden></div>
+          </div>
+          <div class="player-foot"><span>INTERACTIVE SPINE PLAYER</span><span>WEBGL / REAL-TIME</span></div>
+        </div>
+
+        <aside class="controls-panel">
+          <p class="eyebrow">INTERACTION</p>
+          <h3>Make it move.</h3>
+          <p class="panel-description">캐릭터를 클릭하거나 아래 버튼을 눌러 애니메이션을 전환하세요.</p>
+          <div class="control-group">
+            <span class="control-label">ANIMATION</span>
+            <div class="animation-buttons">
+              <button class="animation-button active" data-animation="idle" data-loop="true"><span>01</span> Idle <b>↗</b></button>
+              <button class="animation-button" data-animation="walk" data-loop="true"><span>02</span> Walk <b>↗</b></button>
+              <button class="animation-button" data-animation="attack" data-loop="false"><span>03</span> Attack <b>↗</b></button>
+              <button class="animation-button" data-animation="hit" data-loop="false"><span>04</span> Hit <b>↗</b></button>
+            </div>
+            <p class="microcopy">버튼의 애니메이션 이름은 예시입니다. 실제 Spine 프로젝트의 이름과 일치시켜 주세요.</p>
+          </div>
+          <div class="control-group speed-group">
+            <label class="control-label" for="speed-select">PLAYBACK SPEED</label>
+            <select id="speed-select">
+              <option value="0.5">0.5× Slow</option>
+              <option value="1" selected>1× Normal</option>
+              <option value="1.5">1.5× Fast</option>
+              <option value="2">2× Very fast</option>
+            </select>
+          </div>
+          <div class="current-animation"><span class="status-dot"></span><span>NOW PLAYING</span><strong id="current-animation">IDLE</strong></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="work-section section-wrap">
+      <div class="section-heading"><div><p class="eyebrow">SELECTED WORK</p><h2>More than a pose<span class="accent">.</span></h2></div><p class="heading-caption">A small selection of animation disciplines.</p></div>
+      <div class="work-grid">
+        <article class="work-card"><div class="card-visual visual-one"><span class="visual-icon">✳</span><span class="card-label">01 / CHARACTER</span></div><div class="card-meta"><div><h3>Character Animation</h3><p>Idle · Walk · Action · Emotion</p></div><span>↗</span></div></article>
+        <article class="work-card"><div class="card-visual visual-two"><span class="visual-icon">⌘</span><span class="card-label">02 / RIGGING</span></div><div class="card-meta"><div><h3>Rigging & Setup</h3><p>Bone structure · Mesh · Weights</p></div><span>↗</span></div></article>
+        <article class="work-card"><div class="card-visual visual-three"><span class="visual-icon">◈</span><span class="card-label">03 / GAME READY</span></div><div class="card-meta"><div><h3>Game-ready Assets</h3><p>Runtime · Optimization · Integration</p></div><span>↗</span></div></article>
+      </div>
+      <p class="section-footnote">위 카드는 레이아웃 샘플입니다. 실제 작업물 이미지와 프로젝트 설명으로 교체하세요.</p>
+    </section>
+
+    <section class="about-section section-wrap" id="about">
+      <div><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Built with care.<br><span>Animated with intent.</span></h2></div>
+      <div class="about-copy"><p>캐릭터의 성격과 무게감이 움직임으로 전달되도록 고민합니다. 이 영역에는 본인의 소개, 사용 툴, 담당 업무, 경력 또는 프로젝트 기여도를 적어주세요.</p><div class="tool-tags"><span>SPINE</span><span>UNITY</span><span>2D ANIMATION</span><span>RIGGING</span></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark">S</span><span>SPINE<span class="brand-muted"> / PORTFOLIO</span></span></a><span>DESIGNED & ANIMATED BY YOUR NAME</span><a href="#top">BACK TO TOP ↑</a></footer>
+
+  <script src="https://unpkg.com/@esotericsoftware/spine-player@4.2.*/dist/iife/spine-player.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
