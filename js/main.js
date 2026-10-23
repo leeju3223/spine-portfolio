@@ -6,10 +6,10 @@
   "use strict";
 
   const CONFIG = {
-    skeleton: "./assets/character/character.json",
-    atlas: "./assets/character/character.atlas",
+    skeleton: "./assets/character/Illust_KenethNewYear2026_PS.json",
+    atlas: "./assets/character/Illust_KenethNewYear2026_PS.atlas",
     defaultAnimation: "idle",
-    clickAnimation: "attack",
+    clickAnimation: "point",
     clickAnimationLoops: false,
     idleAnimation: "idle",
     speed: 1
